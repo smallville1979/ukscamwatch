@@ -3,888 +3,267 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="UK Scam Watch — real scams, real warnings, real people. Know what to avoid before it costs you.">
-<meta property="og:title" content="UK Scam Watch ⚠️ — Know Before You Get Burned">
-<meta property="og:description" content="KYC passport scams, Discord account buying, fake loan groups, nude blackmail, Nigerian hackers and more. Real warnings from real people.">
-<title>UK Scam Watch ⚠️</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="UK Jobs Survival Guide — work from home jobs, graduate schemes, free courses, CV help, apprenticeships. Real advice, no BS, always free.">
+<title>UK Jobs Survival Guide 💼</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0a0a;
-  --card:#111;
-  --card2:#161616;
-  --red:#ff3333;
-  --red2:#cc2222;
-  --amber:#ffaa00;
-  --green:#00cc66;
-  --text:#f0f0f0;
-  --muted:#777;
-  --border:#222;
-  --r:12px;
+  --bg:#0d0d0d;--card:#161616;--card2:#1e1e1e;
+  --gold:#f5c842;--gold2:#e6b830;
+  --green:#3ecf8e;--blue:#4a9eff;--red:#ff5c5c;
+  --text:#f0f0f0;--muted:#888;--border:#2a2a2a;
+  --r:14px;--r2:10px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Archivo',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
-
-/* TICKER */
-.ticker{background:var(--red);padding:.4rem 0;overflow:hidden;white-space:nowrap}
-.ticker-inner{display:inline-block;animation:tick 25s linear infinite;font-size:12px;font-weight:600;letter-spacing:.08em;color:#fff}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+.ticker{background:var(--gold);padding:.4rem 0;overflow:hidden;white-space:nowrap}
+.ticker-inner{display:inline-block;animation:tick 30s linear infinite;font-size:12px;font-weight:600;letter-spacing:.08em;color:#000}
 @keyframes tick{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
-
-/* NAV */
-nav{background:rgba(10,10,10,.97);border-bottom:1px solid var(--border);padding:.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
-.nav-logo{font-family:'Archivo Black',sans-serif;font-size:1.1rem;color:var(--red);letter-spacing:.02em}
-.nav-logo span{color:var(--text)}
-.nav-links{display:flex;gap:1.5rem}
-.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:var(--red)}
-
-/* HERO */
-.hero{padding:5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden;max-width:100%}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(255,51,51,.08) 0%,transparent 70%)}
-.hero-warning{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,51,51,.1);border:1px solid rgba(255,51,51,.3);border-radius:20px;padding:.4rem 1rem;font-size:12px;font-weight:600;color:var(--red);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.5rem}
-.hero h1{font-family:'Archivo Black',sans-serif;font-size:clamp(3rem,10vw,7rem);line-height:.95;margin-bottom:1.5rem;color:var(--text)}
-.hero h1 span{color:var(--red)}
-.hero-sub{font-size:1.1rem;color:#999;max-width:560px;margin:0 auto 2.5rem}
-.hero-stats{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
-.hero-stat{text-align:center}
-.hero-stat-num{font-family:'Archivo Black',sans-serif;font-size:2rem;color:var(--red)}
-.hero-stat-label{font-size:12px;color:var(--muted)}
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;cursor:pointer;border:none;font-family:'Archivo',sans-serif}
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red2);transform:translateY(-2px)}
+nav{position:sticky;top:0;z-index:100;background:rgba(13,13,13,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 1rem;overflow-x:auto;white-space:nowrap}
+nav::-webkit-scrollbar{height:2px;background:var(--border)}
+nav::-webkit-scrollbar-thumb{background:var(--gold)}
+.nav-inner{display:inline-flex;align-items:center;gap:0}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:1.1rem;color:var(--gold);padding:.75rem 1rem .75rem 0;margin-right:.25rem;letter-spacing:.04em}
+.nav-inner a{display:inline-block;padding:.75rem .85rem;font-size:13px;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;transition:all .2s}
+.nav-inner a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.hero{min-height:88vh;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:4rem 1.5rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 30% 50%,rgba(245,200,66,.05) 0%,transparent 70%)}
+.hero-flag{font-size:13px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1rem}
+.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,11vw,9rem);line-height:.92;color:var(--text);letter-spacing:.02em;margin-bottom:1.5rem;max-width:700px;position:relative}
+.hero h1 span{color:var(--gold)}
+.hero-sub{font-size:1.05rem;color:#bbb;max-width:520px;margin-bottom:2.5rem;line-height:1.7;position:relative}
+.hero-btns{display:flex;flex-wrap:wrap;gap:.75rem;position:relative}
+.btn{display:inline-flex;align-items:center;gap:.4rem;padding:.7rem 1.4rem;border-radius:50px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;border:none;font-family:'DM Sans',sans-serif}
+.btn-gold{background:var(--gold);color:#000}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-1px)}
 .btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
-.btn-outline:hover{border-color:var(--red);color:var(--red)}
-
-/* SCAM COUNTER */
-.counter-bar{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.5rem;text-align:center}
-.counter-bar p{font-size:.85rem;color:var(--muted);margin-bottom:.5rem}
-.counter-num{font-family:'Archivo Black',sans-serif;font-size:2.5rem;color:var(--red);letter-spacing:.02em}
-
-/* SECTIONS */
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.stat{background:var(--bg);padding:2rem 1rem;text-align:center}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;color:var(--gold);line-height:1}
+.stat-label{font-size:12px;color:var(--muted);margin-top:.25rem}
 section{padding:5rem 1.5rem;max-width:960px;margin:0 auto}
-.section-label{display:inline-flex;align-items:center;gap:.5rem;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);border:1px solid rgba(255,51,51,.25);border-radius:20px;padding:.3rem .9rem;margin-bottom:1rem}
-section h2{font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,6vw,4rem);line-height:1;margin-bottom:.5rem}
-.section-intro{color:#888;max-width:600px;margin-bottom:3rem;font-size:.95rem}
-
-/* SCAM CARDS */
-.scam-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-.scam-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;position:relative;overflow:hidden;transition:border-color .2s,transform .2s}
-.scam-card:hover{border-color:rgba(255,51,51,.4);transform:translateY(-2px)}
-.scam-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--red)}
-.scam-level{position:absolute;top:1rem;right:1rem;font-size:10px;font-weight:700;padding:.2rem .6rem;border-radius:10px;letter-spacing:.06em}
-.level-critical{background:rgba(255,51,51,.15);color:var(--red)}
-.level-high{background:rgba(255,170,0,.12);color:var(--amber)}
-.level-medium{background:rgba(255,170,0,.08);color:#cc8800}
-.scam-icon{font-size:2rem;margin-bottom:.75rem;display:block}
-.scam-card h3{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.5rem;padding-right:4rem}
-.scam-card p{font-size:.85rem;color:#888;line-height:1.6;margin-bottom:.75rem}
-.scam-rule{display:flex;align-items:flex-start;gap:.5rem;font-size:.82rem;color:#aaa;background:rgba(255,51,51,.05);border:1px solid rgba(255,51,51,.1);border-radius:6px;padding:.6rem .75rem;margin-top:.5rem}
-.scam-rule::before{content:'⚠';font-size:.9rem;flex-shrink:0;color:var(--red)}
-
-/* HOW IT WORKS */
-.how-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:2rem;margin-bottom:1rem}
-.how-card h3{font-size:1rem;font-weight:700;color:var(--amber);margin-bottom:1rem}
-.steps{display:flex;flex-direction:column;gap:.75rem}
-.step{display:flex;gap:1rem;align-items:flex-start}
-.step-num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(255,51,51,.1);border:1px solid rgba(255,51,51,.3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--red);margin-top:.15rem}
-.step p{font-size:.88rem;color:#999}
-.step strong{color:var(--text)}
-
-/* RED FLAGS */
-.flags-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin:1.5rem 0}
-.flag{background:rgba(255,51,51,.05);border:1px solid rgba(255,51,51,.15);border-radius:8px;padding:.9rem 1rem;font-size:.85rem;color:#ccc;display:flex;align-items:flex-start;gap:.6rem}
-.flag::before{content:'🚩';font-size:.9rem;flex-shrink:0}
-
-/* DIVIDER */
+.section-tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(245,200,66,.3);border-radius:20px;padding:.3rem .9rem;margin-bottom:1rem}
+section h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,7vw,5rem);line-height:1;color:var(--text);margin-bottom:.5rem}
+.section-intro{font-size:.95rem;color:#aaa;max-width:600px;margin-bottom:3rem}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;transition:border-color .2s,transform .2s}
+.card:hover{border-color:#333;transform:translateY(-2px)}
+.card-icon{font-size:1.75rem;margin-bottom:.75rem;display:block}
+.card h3{font-size:1rem;font-weight:600;color:var(--text);margin-bottom:.5rem}
+.card p{font-size:.85rem;color:#999;line-height:1.6}
+.card a{color:var(--blue);font-size:.82rem;text-decoration:none;display:inline-block;margin-top:.5rem;font-weight:500}
+.card a:hover{text-decoration:underline}
+.card-badge{display:inline-block;margin-top:.75rem;font-size:11px;padding:.2rem .65rem;border-radius:12px;font-weight:600}
+.badge-gold{background:rgba(245,200,66,.12);color:var(--gold)}
+.badge-green{background:rgba(62,207,142,.12);color:var(--green)}
+.badge-blue{background:rgba(74,158,255,.12);color:var(--blue)}
+.card-featured{background:linear-gradient(135deg,#1a1a1a 0%,#1e1a0a 100%);border:1px solid rgba(245,200,66,.2);border-radius:var(--r);padding:2rem;margin-bottom:1.5rem}
+.card-featured h3{font-size:1.2rem;font-weight:600;color:var(--gold);margin-bottom:.5rem}
+.card-featured p{color:#bbb;font-size:.93rem;margin-bottom:1rem}
+.tag-row{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem}
+.tag{font-size:11px;background:var(--card2);border:1px solid var(--border);border-radius:12px;padding:.25rem .65rem;color:var(--muted)}
+.info-box{background:rgba(74,158,255,.06);border:1px solid rgba(74,158,255,.2);border-radius:var(--r2);padding:1rem 1.25rem;font-size:.88rem;color:#9dc8ff;margin:.75rem 0;line-height:1.7}
+.info-box strong{color:var(--blue)}
+.gold-box{background:rgba(245,200,66,.05);border:1px solid rgba(245,200,66,.2);border-radius:var(--r2);padding:1rem 1.25rem;font-size:.88rem;color:#e0c96a;margin:.75rem 0;line-height:1.7}
+.gold-box strong{color:var(--gold)}
+.warning-box{background:rgba(255,92,92,.06);border:1px solid rgba(255,92,92,.2);border-radius:var(--r2);padding:1rem 1.25rem;font-size:.85rem;color:#ff9999;margin-top:1rem}
+.list-cards{display:flex;flex-direction:column;gap:.75rem}
+.list-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r2);padding:1rem 1.25rem;display:flex;gap:1rem;align-items:flex-start;transition:border-color .2s}
+.list-card:hover{border-color:#333}
+.list-card-icon{font-size:1.5rem;flex-shrink:0}
+.list-card-body h4{font-size:.93rem;font-weight:600;color:var(--text);margin-bottom:.2rem}
+.list-card-body p{font-size:.83rem;color:#888;line-height:1.5}
+.list-card-body a{color:var(--blue);text-decoration:none;font-size:.83rem;font-weight:500}
+.list-card-body a:hover{text-decoration:underline}
+.cta-card{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem 2rem;margin-top:1.5rem}
+.cta-card p{font-size:.88rem;color:#aaa}
+.cta-card strong{color:var(--text);display:block;margin-bottom:.25rem}
 hr{border:none;border-top:1px solid var(--border)}
-
-/* BENEFITS CTA */
-.benefits-cta{background:linear-gradient(135deg,#0d1a0d 0%,#111 100%);border:1px solid rgba(0,204,102,.2);border-radius:16px;padding:3rem 2rem;text-align:center;margin:2rem 0}
-.benefits-cta h2{font-family:'Archivo Black',sans-serif;font-size:clamp(1.8rem,5vw,3rem);color:var(--text);margin-bottom:1rem}
-.benefits-cta h2 span{color:var(--green)}
-.benefits-cta p{color:#888;max-width:500px;margin:0 auto 2rem;font-size:.95rem}
-.btn-green{background:var(--green);color:#000;font-weight:700}
-.btn-green:hover{background:#00aa55;transform:translateY(-2px)}
-
-/* SHARE */
+.network-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:1.5rem 0}
+.network-card{border-radius:var(--r);padding:1.5rem;text-decoration:none;display:block;transition:transform .2s}
+.network-card:hover{transform:translateY(-2px)}
+.network-card h3{font-family:'Bebas Neue',sans-serif;font-size:1.3rem;margin-bottom:.4rem;letter-spacing:.03em}
+.network-card p{font-size:.82rem;line-height:1.5}
+.nc-scam{background:#1a0a0a;border:1px solid rgba(255,92,92,.2)}
+.nc-scam h3{color:#ff5c5c}
+.nc-scam p{color:#888}
+.nc-benefits{background:#0a1a0a;border:1px solid rgba(62,207,142,.2)}
+.nc-benefits h3{color:#3ecf8e}
+.nc-benefits p{color:#888}
+.kofi-box{background:rgba(245,200,66,.04);border:1px solid rgba(245,200,66,.15);border-radius:var(--r);padding:2rem;text-align:center}
+.kofi-box h3{font-size:1rem;font-weight:600;color:var(--gold);margin-bottom:.5rem}
+.kofi-box p{font-size:.85rem;color:#888;margin-bottom:1.25rem;max-width:500px;margin-left:auto;margin-right:auto}
 .share-bar{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 1.5rem;text-align:center}
-.share-bar h2{font-family:'Archivo Black',sans-serif;font-size:2rem;margin-bottom:.5rem}
+.share-bar h2{font-family:'Bebas Neue',sans-serif;font-size:3rem;color:var(--text);margin-bottom:.5rem}
 .share-bar p{color:var(--muted);margin-bottom:2rem;font-size:.9rem}
 .share-btns{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
-.share-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.25rem;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--border);color:var(--text);background:var(--card2);transition:all .2s}
+.share-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.25rem;border-radius:50px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--border);color:var(--text);background:var(--card2);transition:all .2s}
 .share-btn:hover{transform:translateY(-1px)}
 .share-btn.wa:hover{border-color:#25d366;color:#25d366}
 .share-btn.fb:hover{border-color:#1877f2;color:#1877f2}
 .share-btn.tw:hover{border-color:#1da1f2;color:#1da1f2}
 .share-btn.rd:hover{border-color:#ff4500;color:#ff4500}
-
-/* FOOTER */
 footer{background:var(--card);border-top:1px solid var(--border);padding:2.5rem 1.5rem;text-align:center}
 footer p{font-size:.8rem;color:var(--muted);line-height:2;max-width:600px;margin:0 auto}
 footer a{color:var(--muted);text-decoration:none}
-footer a:hover{color:var(--red)}
-.footer-logo{font-family:'Archivo Black',sans-serif;font-size:1.5rem;color:var(--red);margin-bottom:.5rem}
-
-/* PULSE */
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
-.pulse{animation:pulse 2s ease-in-out infinite}
-
-@media(max-width:600px){
-  .nav-links{display:none}
-  section{padding:3rem 1rem}
-  .hero{padding:3rem 1rem 2.5rem}
-}
+footer a:hover{color:var(--gold)}
+.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;color:var(--gold);margin-bottom:.5rem}
+@media(max-width:600px){.stats{grid-template-columns:repeat(2,1fr)}section{padding:3.5rem 1rem}.hero{padding:3rem 1rem;min-height:auto}}
 </style>
 </head>
 <body>
 
-<!-- TICKER -->
-<div class="ticker">
-  <span class="ticker-inner">⚠️ KYC PASSPORT SCAM — NEVER SEND YOUR ID TO STRANGERS &nbsp;&nbsp;&nbsp; 🚨 DISCORD ACCOUNT BUYING = BENEFITS FRAUD RISK &nbsp;&nbsp;&nbsp; ⛔ FAKE LOAN GROUPS ON REDDIT — ALL SCAMMERS &nbsp;&nbsp;&nbsp; 🔴 SNAPCHAT "PETROL MONEY" = NUDE SCAM SETUP &nbsp;&nbsp;&nbsp; ⚠️ OUTLIER AI — US TAX BILL WAITING FOR YOU &nbsp;&nbsp;&nbsp; 🚨 FREE £5 FACEBOOK POSTS — DATA HARVESTING &nbsp;&nbsp;&nbsp; ⛔ NIGERIAN ACCOUNT HACKERS ACTIVE ON FACEBOOK &nbsp;&nbsp;&nbsp;</span>
-</div>
+<div class="ticker"><span class="ticker-inner">💼 NATIONAL CAREERS SERVICE — FREE CV HELP BY EMAIL &nbsp;&nbsp;&nbsp; 🏭 TOTALJOBS — LAST MINUTE WAREHOUSE SHIFTS TODAY &nbsp;&nbsp;&nbsp; 🏠 ARISE & TELEPERFORMANCE — REAL WORK FROM HOME JOBS &nbsp;&nbsp;&nbsp; 🎓 MILKROUND — GRADUATE SCHEMES THAT ACTUALLY WORK &nbsp;&nbsp;&nbsp; 🍔 KFC & McDONALD'S FAST TRACK MANAGEMENT — REAL CAREERS &nbsp;&nbsp;&nbsp; 📚 FREE APPRENTICESHIPS — EARN WHILE YOU LEARN &nbsp;&nbsp;&nbsp; 💰 REVOLUT — GET PAID A DAY EARLY &nbsp;&nbsp;&nbsp;</span></div>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">UK<span>ScamWatch</span></div>
-  <div class="nav-links">
-    <a href="#scams">Scams</a>
-    <a href="#redflags">Red Flags</a>
-    <a href="#identity">Identity</a>
-    <a href="#realhelp">Real Help</a>
-  </div>
-</nav>
+<nav><div class="nav-inner">
+  <div class="nav-logo">UK Jobs Guide 💼</div>
+  <a href="#quickwin">⚡ Quick Wins</a>
+  <a href="#wfh">🏠 Work From Home</a>
+  <a href="#graduates">🎓 Graduates</a>
+  <a href="#freecourses">📚 Free Courses</a>
+  <a href="#cvhelp">📄 CV Help</a>
+  <a href="#network">🔗 Network</a>
+</div></nav>
 
-<!-- HERO -->
 <div class="hero">
-  <div class="hero-warning pulse">⚠️ Real scams. Real warnings. No BS.</div>
-  <h1>They're <span>scamming</span><br>everyone.<br>Know the game.</h1>
-  <p class="hero-sub">From KYC passport fraud to fake Facebook £5 posts — here's every scam targeting broke Britain right now. Named. Explained. Exposed.</p>
-  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem">
-    <a href="#scams" class="btn btn-red">⚠️ See All Scams</a>
-    <a href="#realhelp" class="btn btn-outline">💚 Get Real Help Instead</a>
-  </div>
-  <div class="hero-stats">
-    <div class="hero-stat"><div class="hero-stat-num">£2.3B</div><div class="hero-stat-label">Lost to scams UK 2024</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Of these are avoidable</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">£0</div><div class="hero-stat-label">Cost of this warning</div></div>
+  <p class="hero-flag">🇬🇧 Free Resource — UK Jobs &amp; Careers Guide</p>
+  <h1>Stop<br>scrolling.<br>Start <span>earning.</span></h1>
+  <p class="hero-sub">Work from home jobs, graduate schemes, free courses, apprenticeships, last minute shifts — all real, all free to apply, all on one page. No BS. No scams.</p>
+  <div class="hero-btns">
+    <a href="#quickwin" class="btn btn-gold">⚡ Quick Wins First</a>
+    <a href="#wfh" class="btn btn-outline">🏠 Work From Home</a>
+    <a href="#graduates" class="btn btn-outline">🎓 Graduate Jobs</a>
   </div>
 </div>
 
-<div class="counter-bar">
-  <p>Scams documented on this page</p>
-  <div class="counter-num">13</div>
+<div class="stats">
+  <div class="stat"><div class="stat-num">1M+</div><div class="stat-label">UK jobs unfilled now</div></div>
+  <div class="stat"><div class="stat-num">£0</div><div class="stat-label">Cost to use this guide</div></div>
+  <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Legitimate — no scams</div></div>
+  <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Better days ahead</div></div>
 </div>
 
-<!-- IDENTITY SCAMS -->
-<section id="identity">
-  <div class="section-label">🪪 Most Dangerous</div>
-  <h2>Identity &amp;<br>Account Scams</h2>
-  <p class="section-intro">These don't just cost you money. They can cost you your benefits, your bank account, and your freedom. These are the ones that ruin lives.</p>
-
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">🪪</span>
-      <h3>KYC Passport / ID Scam</h3>
-      <p>Someone asks you to send a photo of your passport, driving licence, or bank statement. They say it's for "verification" to unlock a payment or referral bonus. It's not. They're selling your identity or using it to open fraudulent accounts.</p>
-      <div class="scam-rule">Your ID in someone else's hands = identity theft, fraud charges, and a destroyed credit file. Forever.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">💳</span>
-      <h3>Account Buying / Selling</h3>
-      <p>Someone offers you £50-£200 for your bank account details or to use your account to receive money. They say it's "just for transfers." It's money laundering. When police investigate — it's YOUR account. YOU get arrested. YOU lose your benefits.</p>
-      <div class="scam-rule">Selling your account = money mule = criminal conviction. People are going to jail for this right now.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">🎮</span>
-      <h3>Discord Account Buying</h3>
-      <p>Paying or getting paid for Discord, Reddit, or social media accounts. Often linked to crypto scams, fraud networks, and bot farms. Your account gets used to scam other people — then traced back to you.</p>
-      <div class="scam-rule">Platform accounts tied to your identity. When fraud happens through them — you're liable.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">🌍</span>
-      <h3>Nigerian / West African Account Hacking</h3>
-      <p>Facebook friend requests from attractive strangers, long conversations building "trust," then requests to click a link, log in somewhere, or share a code. Your account gets hijacked and used to scam your friends and family.</p>
-      <div class="scam-rule">Never click links from new Facebook friends. Never share login codes. If it feels off — it is.</div>
-    </div>
+<section id="quickwin">
+  <div class="section-tag">⚡ Start Here</div>
+  <h2>Quick Wins —<br>Money This Week</h2>
+  <p class="section-intro">Need money fast and legitimately? These are the fastest routes to paid work in the UK right now. No experience needed for most.</p>
+  <div class="list-cards">
+    <div class="list-card"><div class="list-card-icon">🏭</div><div class="list-card-body"><h4>TotalJobs — Last Minute Warehouse &amp; Logistics</h4><p>Last minute warehouse, logistics, and factory shifts posted daily — some starting within 24-48 hours. Amazon, DHL and more. No experience needed for most. Apply online, start almost immediately.</p><a href="https://www.totaljobs.com" target="_blank" rel="noopener">Search last minute shifts →</a></div></div>
+    <div class="list-card"><div class="list-card-icon">🍔</div><div class="list-card-body"><h4>McDonald's &amp; KFC — Fast Track Management</h4><p>Don't laugh. Some of the best structured management training in UK retail. Crew to manager in 12-18 months. Real qualifications, real pay progression. Always hiring.</p><a href="https://www.mcdonalds.com/gb/en-gb/careers.html" target="_blank" rel="noopener">McDonald's careers →</a> &nbsp; <a href="https://jobs.kfc.co.uk" target="_blank" rel="noopener">KFC careers →</a></div></div>
+    <div class="list-card"><div class="list-card-icon">🏥</div><div class="list-card-body"><h4>NHS — Always Hiring, Always Will Be</h4><p>The UK's biggest employer — never stops hiring. Porters, cleaners, admin, healthcare assistants — no degree for entry level. Full training. Job security like nowhere else.</p><a href="https://www.jobs.nhs.uk" target="_blank" rel="noopener">Search NHS Jobs →</a></div></div>
+    <div class="list-card"><div class="list-card-icon">🚗</div><div class="list-card-body"><h4>Delivery &amp; Gig Work — Start This Week</h4><p>Deliveroo, Uber Eats, Amazon Flex — sign up and start earning within days. Genuine income while you look for something better. Flexible hours, no boss, cash in days.</p><a href="https://riders.deliveroo.co.uk" target="_blank" rel="noopener">Deliveroo →</a> &nbsp; <a href="https://www.amazon.co.uk/b?node=11468118031" target="_blank" rel="noopener">Amazon Flex →</a></div></div>
   </div>
 </section>
 
 <hr>
 
-<!-- MONEY SCAMS -->
-<section id="scams">
-  <div class="section-label">💸 Money Scams</div>
-  <h2>Fake Money<br>&amp; "Free Cash"</h2>
-  <p class="section-intro">If someone's offering you free money on Facebook, Reddit or Discord — read this first. Every single one of these has a catch that costs you more than you gain.</p>
+<section id="wfh">
+  <div class="section-tag">🏠 Work From Home</div>
+  <h2>Real Work<br>From Home Jobs</h2>
+  <p class="section-intro">Not surveys. Not MLM. Actual employed positions where you work from your house and get a proper salary. Real companies. Real contracts.</p>
+  <div class="gold-box" style="margin-bottom:2rem"><strong>💡 The honest truth:</strong> Most legitimate WFH jobs are customer service, admin, or tech support. They pay £20,000–£28,000. Real jobs with contracts, holiday pay, and sick pay. Perfect if you can't travel or have a health condition stopping you working outside.</div>
+  <div class="card-grid">
+    <div class="card"><span class="card-icon">☎️</span><h3>Arise — WFH Customer Service</h3><p>Work from home providing customer service for major brands. Flexible hours. Takes graduates and non-graduates. Genuinely legitimate WFH income.</p><a href="https://www.arise.com/work-from-home-jobs" target="_blank" rel="noopener">arise.com →</a><div class="card-badge badge-blue">🏠 Fully remote</div></div>
+    <div class="card"><span class="card-icon">🎧</span><h3>Teleperformance — Remote CS</h3><p>One of the world's largest customer service companies. Regularly hiring remote workers in the UK. Full training provided. Genuine employed position with full employment rights.</p><a href="https://jobs.teleperformance.com/en/locations/united-kingdom" target="_blank" rel="noopener">teleperformance.com →</a><div class="card-badge badge-green">✅ Proper employed position</div></div>
+    <div class="card"><span class="card-icon">💻</span><h3>Back2Work — Guaranteed Placements</h3><p>Programmes to get people back into employment with guaranteed WFH placements. Have historically paid participants during training. Contact directly to ask what's available now.</p><a href="https://www.back2workuk.com" target="_blank" rel="noopener">back2workuk.com →</a><div class="card-badge badge-gold">💰 Can pay during training</div></div>
+    <div class="card"><span class="card-icon">🔍</span><h3>Indeed &amp; Reed — Filter Remote</h3><p>Both let you filter by "remote" or "work from home." Set up a daily email alert for "remote customer service." New jobs daily. Free to apply.</p><a href="https://www.indeed.co.uk/jobs?q=remote&l=UK" target="_blank" rel="noopener">Indeed remote →</a> &nbsp; <a href="https://www.reed.co.uk/jobs/work-from-home-jobs" target="_blank" rel="noopener">Reed WFH →</a><div class="card-badge badge-blue">🔔 Set up daily alerts</div></div>
+  </div>
+  <div class="warning-box">⚠️ Any WFH job that asks you to pay upfront, buy a kit, recruit others, or receive money for someone else — is a scam. Real WFH jobs pay YOU. Check <a href="https://smallville1979.github.io/ukscamwatch/" style="color:#ff9999">UK Scam Watch</a> for the warning signs.</div>
+</section>
 
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">💰</span>
-      <h3>"Free £5 / £10 / £20" Facebook Posts</h3>
-      <p>Posts saying "comment INFO for free £5" with 13+ comments. Nobody gets £5. You get added to a WhatsApp group, sold a course, or harvested for data. The engagement is fake or desperate people who never received anything.</p>
-      <div class="scam-rule">If free money required a comment — it's data harvesting or a funnel into something worse.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">📱</span>
-      <h3>eBay Selling Tax Trap</h3>
-      <p>People sell stuff on eBay thinking it's just pocket money. Since 2024 HMRC gets automatic reports if you sell over £1,000/year. People getting surprise tax bills, penalties, and investigations — years later when they've forgotten.</p>
-      <div class="scam-rule">Not technically a scam — but nobody tells you. Sell over £1,000/year on eBay? Register as self-employed or declare it.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">🤖</span>
-      <h3>Outlier AI / "Work From Home AI" Traps</h3>
-      <p>Platforms like Outlier pay you in USD as a US contractor. Sounds great. Then a US tax form arrives. You owe IRS money. UK tax implications too. What looked like extra income becomes a cross-border tax nightmare nobody warned you about.</p>
-      <div class="scam-rule">Any platform paying in USD as a "contractor" = potential US tax liability. Ask before you start.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">📊</span>
-      <h3>Reddit Loan Groups</h3>
-      <p>"Borrow £100, repay £120 next week." Real people lending to strangers on Reddit. The lenders are often scammers who take your personal info then disappear. The borrowers often never repay and vanish. Nobody wins. Everyone gets burned.</p>
-      <div class="scam-rule">Reddit peer lending = unregulated, unprotected, almost always a scam on one or both sides.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-medium">MEDIUM</span>
-      <span class="scam-icon">💡</span>
-      <h3>Marketing "Secret Sauce" Agencies</h3>
-      <p>"Get to the top of Google Maps for £1.90/day!" It's just a basic Google Business Profile setup. Takes 20 minutes and costs nothing. They charge £150+ setup and monthly fees for something you can do yourself in an afternoon for free.</p>
-      <div class="scam-rule">Google Business Profile is free. Any agency charging £100+ just to set it up is ripping you off.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-medium">MEDIUM</span>
-      <span class="scam-icon">🧠</span>
-      <h3>AI Prompt Selling</h3>
-      <p>Someone sells you a £10-£50 "prompt pack" for ChatGPT or Claude. Fancy PDF, lots of hype. The prompts inside are things you could have typed yourself in 30 seconds. AI will literally write better prompts for free if you just ask it to.</p>
-      <div class="scam-rule">Ask any AI: "Write me a prompt to do X." It will do it. For free. Instantly. Every time.</div>
-    </div>
+<hr>
+
+<section id="graduates">
+  <div class="section-tag">🎓 Graduates</div>
+  <h2>Graduate Jobs —<br>Real Talk</h2>
+  <p class="section-intro">Reddit is full of graduates convinced they're unemployable. They're not. They're looking in the wrong places with the wrong CV. Here's what actually works.</p>
+  <div class="info-box" style="margin-bottom:2rem"><strong>The Reddit graduate trap:</strong> Graduates sit comparing rejection emails, convincing each other the market is impossible. Meanwhile others are getting hired. The difference is usually where they're looking and how their CV reads — not their degree.</div>
+  <div class="list-cards" style="margin-bottom:2rem">
+    <div class="list-card"><div class="list-card-icon">🥛</div><div class="list-card-body"><h4>Milkround — UK's Best Graduate Job Site</h4><p>Built specifically for UK graduates. Has placed people at Mars, Unilever, the Civil Service, and hundreds more. Graduate schemes, entry level roles, and internships. Free. Set up a profile and let employers find you.</p><a href="https://www.milkround.com" target="_blank" rel="noopener">milkround.com → Start here</a></div></div>
+    <div class="list-card"><div class="list-card-icon">🏛️</div><div class="list-card-body"><h4>Civil Service Fast Stream — Massively Underrated</h4><p>One of the best graduate schemes in the UK. Job security, pension, good salary, genuine progression. Open to all degree subjects. Applications open annually.</p><a href="https://www.faststream.gov.uk" target="_blank" rel="noopener">faststream.gov.uk →</a></div></div>
+    <div class="list-card"><div class="list-card-icon">🌍</div><div class="list-card-body"><h4>Gap Years &amp; Work Experience</h4><p>A well-structured gap year with real work experience beats a blank CV every time. BUNAC and Raleigh International run structured programmes. Even 3 months voluntary work fills the CV with skills employers want.</p><a href="https://www.bunac.org" target="_blank" rel="noopener">BUNAC →</a> &nbsp; <a href="https://www.raleighinternational.org" target="_blank" rel="noopener">Raleigh International →</a></div></div>
+    <div class="list-card"><div class="list-card-icon">💼</div><div class="list-card-body"><h4>Temp Agencies — Hidden Graduate Market</h4><p>Hays, Adecco, and Reed place graduates in office roles daily. You get paid, get experience, and often get offered permanent roles. Register with 3-4 agencies in your city.</p><a href="https://www.hays.co.uk" target="_blank" rel="noopener">Hays →</a> &nbsp; <a href="https://www.adecco.co.uk" target="_blank" rel="noopener">Adecco →</a></div></div>
   </div>
 </section>
 
 <hr>
 
-<!-- PERSONAL / SOCIAL SCAMS -->
-<section id="social">
-  <div class="section-label">👤 Personal Scams</div>
-  <h2>Personal &amp;<br>Social Scams</h2>
-  <p class="section-intro">These target you personally — through loneliness, desperation, or just being a decent person. Recognise the scripts before they run them on you.</p>
-
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">📸</span>
-      <h3>Nude Selling / Sextortion</h3>
-      <p>Woman adds you on Snapchat or Instagram. Builds a tiny bit of chat. Then: "I sell nudes, want to buy?" Or they share something first — then demand payment or they'll send screenshots to your contacts. The "woman" is often not who they claim.</p>
-      <div class="scam-rule">Never pay. Never engage. Block and report immediately. Paying once guarantees they come back for more.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">⛽</span>
-      <h3>Snapchat "Petrol / Emergency" Scam</h3>
-      <p>Stranger adds you, tells a believable sob story — stranded, need petrol, just £20-£40, will pay back. Story has holes if you look. Once you send — they're gone. Or pivot to selling nudes. Same script, different opener every time.</p>
-      <div class="scam-rule">Strangers asking for money via Snapchat / Instagram are running a script. The story is always slightly off.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-medium">MEDIUM</span>
-      <span class="scam-icon">📧</span>
-      <h3>Dodgy Texts &amp; Emails</h3>
-      <p>"Your parcel is held." "Your bank account has been suspended." "HMRC owes you a refund." All fake. All trying to get you to click a link and enter your details. The links look real. The websites look real. They're not.</p>
-      <div class="scam-rule">Never click links in unexpected texts or emails. Go directly to the official website by typing it yourself.</div>
-    </div>
-  </div>
-
-  <!-- HOW IT WORKS -->
-  <div class="how-card" style="margin-top:2rem">
-    <h3>⚙️ How the Snapchat / Social Scam Actually Works — The Full Script</h3>
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><p><strong>Random add.</strong> Attractive profile picture. No mutual friends. Adds you out of nowhere.</p></div>
-      <div class="step"><div class="step-num">2</div><p><strong>Small talk.</strong> "Hey how are you?" Friendly. Normal. Building just enough rapport.</p></div>
-      <div class="step"><div class="step-num">3</div><p><strong>The story.</strong> Stranded. Petrol. Sick relative. Lost purse. Always urgent. Always just £20-£40. Always "I'll pay you back."</p></div>
-      <div class="step"><div class="step-num">4</div><p><strong>If you hesitate</strong> — they pivot to nude selling, or get aggressive, or disappear and try again next week with a new profile.</p></div>
-      <div class="step"><div class="step-num">5</div><p><strong>If you pay</strong> — they're gone. Or they come back. Because you paid once which means you might pay again.</p></div>
-    </div>
+<section id="freecourses">
+  <div class="section-tag">📚 Free Courses</div>
+  <h2>Free Skills<br>&amp; Training</h2>
+  <p class="section-intro">You can get properly qualified for free in the UK. Not YouTube tutorials — recognised courses, apprenticeships, and funded programmes.</p>
+  <div class="card-grid">
+    <div class="card"><span class="card-icon">🎓</span><h3>Apprenticeships — Earn While You Learn</h3><p>Available at all levels including degree level. Earn a salary while getting qualified. Everything from digital marketing to engineering. Any age, any background.</p><a href="https://www.findapprenticeship.service.gov.uk" target="_blank" rel="noopener">Find an Apprenticeship →</a><div class="card-badge badge-green">💰 Paid while you train</div></div>
+    <div class="card"><span class="card-icon">💻</span><h3>Google Digital Garage — Free &amp; Certified</h3><p>Free digital marketing, data, and career skills courses with certificates respected by employers. Digital Marketing Fundamentals genuinely helps a CV.</p><a href="https://learndigital.withgoogle.com/digitalgarage" target="_blank" rel="noopener">Google Digital Garage →</a><div class="card-badge badge-gold">🏆 Google certified — free</div></div>
+    <div class="card"><span class="card-icon">🏛️</span><h3>National Careers Service</h3><p>Free skills assessments, career guidance, and funded course referrals. Email advisors are brilliant — genuinely helpful and empathetic. Email over phone for better advice every time.</p><a href="https://nationalcareers.service.gov.uk" target="_blank" rel="noopener">nationalcareers.service.gov.uk →</a><div class="card-badge badge-green">✅ Email them — genuinely great</div></div>
+    <div class="card"><span class="card-icon">🍽️</span><h3>Free Food Hygiene Certificate</h3><p>Level 2 Food Hygiene opens doors in hospitality, catering, and food retail. Free online. Takes a few hours. Opens doors immediately for kitchen and food service work.</p><a href="https://www.highspeedtraining.co.uk/food-hygiene/" target="_blank" rel="noopener">Free Food Hygiene course →</a><div class="card-badge badge-gold">⏱️ A few hours — free</div></div>
+    <div class="card"><span class="card-icon">📊</span><h3>Microsoft Learn — Free Tech Skills</h3><p>Free Excel, data analysis, and cloud computing courses with certificates. Excel skills alone make a CV significantly more competitive for office and admin roles.</p><a href="https://learn.microsoft.com/en-gb/" target="_blank" rel="noopener">Microsoft Learn →</a><div class="card-badge badge-blue">🏆 Microsoft certified — free</div></div>
+    <div class="card"><span class="card-icon">🎨</span><h3>Canva Design School — Free</h3><p>Free graphic design and social media courses. Useful for marketing, admin, and anyone wanting creative skills on their CV. Free, starts immediately.</p><a href="https://www.canva.com/designschool/" target="_blank" rel="noopener">Canva Design School →</a><div class="card-badge badge-gold">🎨 Creative skills — free</div></div>
   </div>
 </section>
 
 <hr>
 
-<!-- ROMANCE SCAMS -->
-<section id="romance">
-  <div class="section-label">💔 Romance Scams</div>
-  <h2>Catfish &amp;<br>Romance Scams</h2>
-  <p class="section-intro">They target loneliness. They're patient. They'll talk to you for weeks before asking for anything. And they're running 50 conversations at the same time as yours. This one ruins lives.</p>
-
-  <div style="background:rgba(255,51,51,.05);border:1px solid rgba(255,51,51,.2);border-radius:var(--r);padding:1.5rem 2rem;margin-bottom:2rem;font-size:1rem;color:#ffaaaa;font-weight:600;text-align:center;font-family:'Archivo Black',sans-serif;font-size:1.3rem">
-    ❤️ NEVER SEND MONEY TO SOMEONE YOU HAVEN'T MET IN PERSON. EVER. NOT ONCE. NOT EVEN £10.
+<section id="cvhelp">
+  <div class="section-tag">📄 CV Help</div>
+  <h2>CV &amp; Interview<br>Help — Free</h2>
+  <p class="section-intro">Most CVs are rejected in 6 seconds. Here's how to make yours survive the scan and get read by an actual human.</p>
+  <div class="card-featured">
+    <h3>🏛️ National Careers Service — Free CV Reviews</h3>
+    <p>Will review your CV for free and give personalised written feedback. Their email service is excellent — detailed, empathetic, and actually useful. Better than most paid services. Email them, don't call.</p>
+    <div class="tag-row"><span class="tag">Completely free</span><span class="tag">Email is better than phone</span><span class="tag">Personalised feedback</span><span class="tag">Professional advisors</span></div>
+    <a href="https://nationalcareers.service.gov.uk/contact-us" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:13px">Get Free CV Help →</a>
   </div>
-
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">😍</span>
-      <h3>The Hi-Vis Catfish — Gay Groups</h3>
-      <p>"Hi guys I'm new here looking for a long term relationship message me" — anonymous account, stolen photo of a good looking young guy, dodgy link. Posted in gay singles groups, silver daddies groups, lonely hearts groups. 29 reactions in an hour. Every single one is fake or a victim.</p>
-      <div class="scam-rule">Anonymous participant + attractive photo + no post history + weird link = Nigerian romance scammer. Report and move on.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">📱</span>
-      <h3>The Long Game — Weeks of Chat</h3>
-      <p>They add you, chat every day, say good morning, remember things you told them, make you feel special. Then after 2-4 weeks — an "emergency." Hospital bill. Stuck abroad. Package held at customs. Just needs £200. Will pay back immediately. They won't.</p>
-      <div class="scam-rule">The longer they've been nice to you — the bigger the ask will be. Kindness is investment. The return they want is your money.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">🌍</span>
-      <h3>The Phone Farm Operation</h3>
-      <p>This isn't one person sitting at home. These are organised operations — rooms full of people in West Africa running 50-100 romantic conversations simultaneously from multiple phones. It's a 9-5 job. Scripts are shared. Photos are stolen from random people's Instagram. You are a number on a spreadsheet.</p>
-      <div class="scam-rule">If they can't video call, won't meet, camera is always "broken" — they are not who they say they are. Full stop.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">🔗</span>
-      <h3>The Spoo.me / Shortlink Trap</h3>
-      <p>Posts with spoo.me, bit.ly, or other link shorteners that hide the destination. Could go anywhere — data harvesting pages, fake WhatsApp redirects, malware downloads, fake login pages. The anonymous post with a short link in gay groups is textbook Nigerian scammer setup.</p>
-      <div class="scam-rule">Never click shortened links from anonymous accounts or people you don't know. Check where links go at checkshorturl.com first.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">💸</span>
-      <h3>Western Union / Gift Card Asks</h3>
-      <p>Once the "emergency" comes — they'll ask for Western Union, MoneyGram, iTunes gift cards, Google Play cards, or bank transfer. Why? Because these can't be reversed. Once sent — gone forever. No bank protection. No refund. Nothing.</p>
-      <div class="scam-rule">Any request for gift cards or Western Union as payment is a scam. No exceptions. Legitimate people don't need iTunes cards for emergencies.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">📸</span>
-      <h3>Sextortion — The Photo Trap</h3>
-      <p>They persuade you to share intimate photos or get on video. Then the tone changes completely. "Pay me or I send these to everyone you know." They often already have your Facebook friends list. This is organised blackmail. Victims have taken their own lives over this.</p>
-      <div class="scam-rule">Never share intimate images with anyone you haven't met in person. If this happens to you — do NOT pay. Report to Action Fraud immediately.</div>
-    </div>
+  <div class="card-grid" style="margin-top:1rem">
+    <div class="card"><span class="card-icon">📝</span><h3>CV Tips That Actually Work</h3><p>One page under 5 years experience. Two pages maximum. No photo. Bullet points not paragraphs. Tailor for every single job — copy words from the job advert directly into your CV.</p><div class="card-badge badge-gold">⚡ Tailor every application</div></div>
+    <div class="card"><span class="card-icon">🎯</span><h3>Cover Letters — Keep It Short</h3><p>Three short paragraphs. Why you want this job. What you bring. When you're available. Shorter and specific beats longer and vague every single time.</p><div class="card-badge badge-green">✅ 3 paragraphs maximum</div></div>
+    <div class="card"><span class="card-icon">🤝</span><h3>Interview Prep — STAR Method</h3><p>Situation, Task, Action, Result. Prepare 5 examples from your life. Practice out loud — not in your head. Record yourself on your phone. Painful but it genuinely works.</p><div class="card-badge badge-blue">🎤 Practice out loud always</div></div>
   </div>
+  <div class="info-box" style="margin-top:1.5rem"><strong>💡 The one trick that works every time:</strong> Copy exact words from the job description into your CV. Applicant Tracking Systems scan for keyword matches before a human ever sees your application. If the job says "customer service experience" — use those exact words. Not "worked with customers." Exact words.</div>
+</section>
 
-  <div class="how-card" style="margin-top:2rem">
-    <h3>💔 The Full Romance Scam Script — So You Recognise It</h3>
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><p><strong>The approach.</strong> Attractive stranger adds you or messages out of nowhere. Profile looks real but is recently created or sparse.</p></div>
-      <div class="step"><div class="step-num">2</div><p><strong>Building trust.</strong> Daily messages. Good morning texts. Remembers everything. Makes you feel seen and understood. This goes on for days or weeks.</p></div>
-      <div class="step"><div class="step-num">3</div><p><strong>The block.</strong> Can never video call. Camera broken. Works on an oil rig. Serving abroad in the military. Always a reason they can't appear on screen.</p></div>
-      <div class="step"><div class="step-num">4</div><p><strong>Falling for it.</strong> You start to develop feelings. You defend them to friends. You make excuses for the video call thing. This is working as designed.</p></div>
-      <div class="step"><div class="step-num">5</div><p><strong>The emergency.</strong> Hospital. Customs fee. Flight home. Stuck abroad. Just needs £200-£500. Will pay back immediately. Sounds completely believable.</p></div>
-      <div class="step"><div class="step-num">6</div><p><strong>If you pay</strong> — they come back. Emergency after emergency. Until you stop. Then they disappear. Or they threaten you if you have photos.</p></div>
-      <div class="step"><div class="step-num">7</div><p><strong>If you refuse</strong> — they often get aggressive, guilt-trip you, or vanish immediately. Real partners don't vanish when you say you can't send money.</p></div>
-    </div>
-  </div>
+<hr>
 
-  <div style="background:rgba(255,51,51,.06);border:1px solid rgba(255,51,51,.2);border-radius:var(--r);padding:1.5rem 2rem;margin-top:1.5rem">
-    <p style="font-weight:700;color:var(--red);margin-bottom:.75rem;font-size:1rem">🚨 If this is happening to you right now:</p>
-    <p style="font-size:.9rem;color:#ccc;line-height:1.8">Stop all contact immediately. Do not send money. Do not send photos. Report the profile on whatever platform you're using. Report to <a href="https://www.actionfraud.police.uk" style="color:#4a9eff">Action Fraud</a>. Tell someone you trust. You are not stupid — these people are professionals who do this full time. It happens to smart, educated people every single day.</p>
+<section style="padding:2rem 1.5rem;max-width:960px;margin:0 auto">
+  <div class="kofi-box">
+    <h3>☕ This Guide Helped You? Buy Tom a Coffee</h3>
+    <p>This guide is completely free and always will be. If it helped you and you're in a position to, a small Ko-fi tip helps keep guides like this running for everyone who needs them. Totally optional — absolutely no pressure.</p>
+    <a href="https://ko-fi.com/tomgallagher" target="_blank" rel="noopener" class="btn btn-gold" style="font-size:13px">☕ Buy Tom a Coffee →</a>
   </div>
 </section>
 
 <hr>
 
-<!-- RED FLAGS -->
-<section id="redflags">
-  <div class="section-label">🚩 Universal Red Flags</div>
-  <h2>If You See<br>Any of These —<br>Walk Away</h2>
-  <p class="section-intro">Doesn't matter what the offer is. If any of these apply — it's a scam. No exceptions.</p>
-
-  <div class="flags-grid">
-    <div class="flag">They need your ID, passport, or bank details to "release" money</div>
-    <div class="flag">They contact you first out of nowhere</div>
-    <div class="flag">The story doesn't quite add up</div>
-    <div class="flag">They need money before you get paid</div>
-    <div class="flag">They want payment via PayPal Friends, Cash App, or bank transfer</div>
-    <div class="flag">They won't video call or their camera is "broken"</div>
-    <div class="flag">They're unusually complimentary very quickly</div>
-    <div class="flag">They get aggressive when you question anything</div>
-    <div class="flag">The group admin won't allow links to outside resources</div>
-    <div class="flag">Everyone in the comments says "Info" or "Yes please"</div>
-    <div class="flag">The opportunity involves receiving money into your account for someone else</div>
-    <div class="flag">"No time wasters" in the post — classic pressure tactic</div>
-  </div>
-
-  <div style="background:rgba(255,51,51,.05);border:1px solid rgba(255,51,51,.2);border-radius:var(--r);padding:1.5rem;margin-top:1.5rem">
-    <p style="font-size:.9rem;color:#ccc;line-height:1.8"><strong style="color:var(--red)">The golden rule:</strong> If someone you've never met in person is offering you money, asking for money, or asking for your personal details — assume it's a scam until proven otherwise. Real opportunities don't need to pressure you. Real people don't need your passport. Real jobs don't ask you to receive money for them.</p>
+<section id="network" style="padding:3rem 1.5rem;max-width:960px;margin:0 auto">
+  <div class="section-tag">🔗 Full Network</div>
+  <h2>Also Check<br>These Out</h2>
+  <p class="section-intro">Three free sites. One mission. All linking together.</p>
+  <div class="network-grid">
+    <a href="https://smallville1979.github.io/ukscamwatch/" target="_blank" rel="noopener" class="network-card nc-scam"><h3>⚠️ UK Scam Watch</h3><p>Every scam targeting broke Britain right now. KYC fraud, romance scammers, fake loan groups, account buying — named and exposed. Free.</p></a>
+    <a href="https://smallville1979.github.io/benefits-guide/" target="_blank" rel="noopener" class="network-card nc-benefits"><h3>💛 Benefits Survival Guide</h3><p>£19 billion in benefits unclaimed every year. Food banks, energy help, free legal advice, mental health support — all in one place. Free.</p></a>
   </div>
 </section>
 
-<hr>
-
-<!-- REPORT IT -->
-<section style="padding:3rem 1.5rem;max-width:960px;margin:0 auto">
-  <div class="section-label">📢 Report It</div>
-  <h2>Got Scammed<br>or Spotted One?</h2>
-  <p class="section-intro">Report it. Every report helps protect someone else.</p>
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-icon">🏛️</span>
-      <h3>Action Fraud — UK's National Fraud Reporting</h3>
-      <p>Report any financial scam, fraud, or cybercrime. Free, official, and your report genuinely helps investigations.</p>
-      <a href="https://www.actionfraud.police.uk" target="_blank" rel="noopener" style="color:#4a9eff;font-size:.83rem;text-decoration:none">actionfraud.police.uk →</a>
-    </div>
-    <div class="scam-card">
-      <span class="scam-icon">📱</span>
-      <h3>Forward Scam Texts to 7726</h3>
-      <p>Got a dodgy text? Forward it to 7726 (spells SPAM). Free from all networks. Reports it directly to your mobile provider.</p>
-      <div class="scam-rule">Takes 10 seconds and actually works.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-icon">📧</span>
-      <h3>Report Scam Emails</h3>
-      <p>Forward suspicious emails to report@phishing.gov.uk — the UK's official phishing email reporting service. Free and takes seconds.</p>
-      <a href="mailto:report@phishing.gov.uk" style="color:#4a9eff;font-size:.83rem;text-decoration:none">report@phishing.gov.uk →</a>
-    </div>
-  </div>
-</section>
-
-<hr>
-
-<!-- BENEFITS CTA -->
-<section id="realhelp" style="padding:3rem 1.5rem;max-width:960px;margin:0 auto">
-  <div class="benefits-cta">
-    <div style="font-size:2.5rem;margin-bottom:1rem">💚</div>
-    <h2>Done with scams?<br><span>Here's what actually works.</span></h2>
-    <p>While scammers were taking your money, you may have been missing real money you're actually entitled to. Benefits, grants, energy help, food banks, free legal advice — all real, all free, all yours.</p>
-    <a href="https://smallville1979.github.io/benefits-guide/" target="_blank" rel="noopener" class="btn btn-green" style="font-size:15px;padding:1rem 2rem">💛 Go to the Free Benefits Survival Guide →</a>
-    <p style="font-size:.8rem;color:#555;margin-top:1rem">No signup. No catch. No scam. Just free help.</p>
-  </div>
-</section>
-
-<!-- SHARE -->
 <div class="share-bar">
-  <h2>⚠️ Share This — Someone You Know Needs It</h2>
-  <p>Every share protects someone. Takes 10 seconds.</p>
+  <h2>💼 Share This</h2>
+  <p>Know a graduate stuck on Reddit? Someone who needs work? Share this. Free. Always will be.</p>
   <div class="share-btns">
-    <a href="https://wa.me/?text=Know+these+UK+scams+before+they+get+you+%E2%80%94+https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F" target="_blank" rel="noopener" class="share-btn wa">💬 WhatsApp</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F&quote=UK+Scam+Watch+%E2%80%94+every+scam+targeting+broke+Britain+right+now.+Named.+Exposed." target="_blank" rel="noopener" class="share-btn fb">👍 Facebook</a>
-    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F&text=UK+Scam+Watch+%E2%80%94+KYC+passport+fraud%2C+fake+%C2%A35+posts%2C+account+buying%2C+Snapchat+scams+and+more.+Share+before+someone+gets+burned+%E2%9A%A0%EF%B8%8F" target="_blank" rel="noopener" class="share-btn tw">🐦 Twitter</a>
-    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F&title=UK+Scam+Watch+%E2%80%94+every+scam+targeting+broke+Britain+right+now+%5BExposed%5D" target="_blank" rel="noopener" class="share-btn rd">🔴 Reddit</a>
+    <a href="https://wa.me/?text=Free+UK+jobs+guide+%E2%80%94+WFH+jobs%2C+graduate+schemes%2C+free+courses%2C+CV+help%3A+https%3A%2F%2Fsmallville1979.github.io%2Fuk-jobs-guide%2F" target="_blank" rel="noopener" class="share-btn wa">💬 WhatsApp</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsmallville1979.github.io%2Fuk-jobs-guide%2F" target="_blank" rel="noopener" class="share-btn fb">👍 Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsmallville1979.github.io%2Fuk-jobs-guide%2F&text=Free+UK+Jobs+Survival+Guide+%F0%9F%92%BC+%E2%80%94+WFH+jobs%2C+graduates%2C+free+courses%2C+CV+help" target="_blank" rel="noopener" class="share-btn tw">🐦 Twitter</a>
+    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fsmallville1979.github.io%2Fuk-jobs-guide%2F&title=Free+UK+Jobs+Survival+Guide+%E2%80%94+WFH%2C+graduates%2C+free+courses%2C+CV+help" target="_blank" rel="noopener" class="share-btn rd">🔴 Reddit</a>
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
-  <div class="footer-logo">UKScamWatch ⚠️</div>
-  <p>Built for free. No ads. No agenda. Just warnings.<br>
-  Spotted a scam not listed here? The more people know, the safer everyone is.<br><br>
-  Also check: <a href="https://www.actionfraud.police.uk">Action Fraud</a> · <a href="https://www.citizensadvice.org.uk">Citizens Advice</a> · <a href="https://www.gov.uk/report-suspicious-emails-websites-phishing">Gov.uk Phishing Reports</a><br><br>
-  <a href="https://smallville1979.github.io/benefits-guide/">💛 Benefits Survival Guide</a> — real free help for people who need it</p>
-</footer>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="UK Scam Watch — real scams, real warnings, real people. Know what to avoid before it costs you.">
-<meta property="og:title" content="UK Scam Watch ⚠️ — Know Before You Get Burned">
-<meta property="og:description" content="KYC passport scams, Discord account buying, fake loan groups, nude blackmail, Nigerian hackers and more. Real warnings from real people.">
-<title>UK Scam Watch ⚠️</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#0a0a0a;
-  --card:#111;
-  --card2:#161616;
-  --red:#ff3333;
-  --red2:#cc2222;
-  --amber:#ffaa00;
-  --green:#00cc66;
-  --text:#f0f0f0;
-  --muted:#777;
-  --border:#222;
-  --r:12px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:'Archivo',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
-
-/* TICKER */
-.ticker{background:var(--red);padding:.4rem 0;overflow:hidden;white-space:nowrap}
-.ticker-inner{display:inline-block;animation:tick 25s linear infinite;font-size:12px;font-weight:600;letter-spacing:.08em;color:#fff}
-@keyframes tick{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
-
-/* NAV */
-nav{background:rgba(10,10,10,.97);border-bottom:1px solid var(--border);padding:.75rem 1.5rem;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
-.nav-logo{font-family:'Archivo Black',sans-serif;font-size:1.1rem;color:var(--red);letter-spacing:.02em}
-.nav-logo span{color:var(--text)}
-.nav-links{display:flex;gap:1.5rem}
-.nav-links a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
-.nav-links a:hover{color:var(--red)}
-
-/* HERO */
-.hero{padding:5rem 1.5rem 4rem;text-align:center;position:relative;overflow:hidden;max-width:100%}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(255,51,51,.08) 0%,transparent 70%)}
-.hero-warning{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,51,51,.1);border:1px solid rgba(255,51,51,.3);border-radius:20px;padding:.4rem 1rem;font-size:12px;font-weight:600;color:var(--red);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.5rem}
-.hero h1{font-family:'Archivo Black',sans-serif;font-size:clamp(3rem,10vw,7rem);line-height:.95;margin-bottom:1.5rem;color:var(--text)}
-.hero h1 span{color:var(--red)}
-.hero-sub{font-size:1.1rem;color:#999;max-width:560px;margin:0 auto 2.5rem}
-.hero-stats{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:3rem}
-.hero-stat{text-align:center}
-.hero-stat-num{font-family:'Archivo Black',sans-serif;font-size:2rem;color:var(--red)}
-.hero-stat-label{font-size:12px;color:var(--muted)}
-.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.75rem 1.5rem;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;cursor:pointer;border:none;font-family:'Archivo',sans-serif}
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red2);transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
-.btn-outline:hover{border-color:var(--red);color:var(--red)}
-
-/* SCAM COUNTER */
-.counter-bar{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.5rem;text-align:center}
-.counter-bar p{font-size:.85rem;color:var(--muted);margin-bottom:.5rem}
-.counter-num{font-family:'Archivo Black',sans-serif;font-size:2.5rem;color:var(--red);letter-spacing:.02em}
-
-/* SECTIONS */
-section{padding:5rem 1.5rem;max-width:960px;margin:0 auto}
-.section-label{display:inline-flex;align-items:center;gap:.5rem;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);border:1px solid rgba(255,51,51,.25);border-radius:20px;padding:.3rem .9rem;margin-bottom:1rem}
-section h2{font-family:'Archivo Black',sans-serif;font-size:clamp(2rem,6vw,4rem);line-height:1;margin-bottom:.5rem}
-.section-intro{color:#888;max-width:600px;margin-bottom:3rem;font-size:.95rem}
-
-/* SCAM CARDS */
-.scam-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-.scam-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;position:relative;overflow:hidden;transition:border-color .2s,transform .2s}
-.scam-card:hover{border-color:rgba(255,51,51,.4);transform:translateY(-2px)}
-.scam-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--red)}
-.scam-level{position:absolute;top:1rem;right:1rem;font-size:10px;font-weight:700;padding:.2rem .6rem;border-radius:10px;letter-spacing:.06em}
-.level-critical{background:rgba(255,51,51,.15);color:var(--red)}
-.level-high{background:rgba(255,170,0,.12);color:var(--amber)}
-.level-medium{background:rgba(255,170,0,.08);color:#cc8800}
-.scam-icon{font-size:2rem;margin-bottom:.75rem;display:block}
-.scam-card h3{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.5rem;padding-right:4rem}
-.scam-card p{font-size:.85rem;color:#888;line-height:1.6;margin-bottom:.75rem}
-.scam-rule{display:flex;align-items:flex-start;gap:.5rem;font-size:.82rem;color:#aaa;background:rgba(255,51,51,.05);border:1px solid rgba(255,51,51,.1);border-radius:6px;padding:.6rem .75rem;margin-top:.5rem}
-.scam-rule::before{content:'⚠';font-size:.9rem;flex-shrink:0;color:var(--red)}
-
-/* HOW IT WORKS */
-.how-card{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:2rem;margin-bottom:1rem}
-.how-card h3{font-size:1rem;font-weight:700;color:var(--amber);margin-bottom:1rem}
-.steps{display:flex;flex-direction:column;gap:.75rem}
-.step{display:flex;gap:1rem;align-items:flex-start}
-.step-num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(255,51,51,.1);border:1px solid rgba(255,51,51,.3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--red);margin-top:.15rem}
-.step p{font-size:.88rem;color:#999}
-.step strong{color:var(--text)}
-
-/* RED FLAGS */
-.flags-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.75rem;margin:1.5rem 0}
-.flag{background:rgba(255,51,51,.05);border:1px solid rgba(255,51,51,.15);border-radius:8px;padding:.9rem 1rem;font-size:.85rem;color:#ccc;display:flex;align-items:flex-start;gap:.6rem}
-.flag::before{content:'🚩';font-size:.9rem;flex-shrink:0}
-
-/* DIVIDER */
-hr{border:none;border-top:1px solid var(--border)}
-
-/* BENEFITS CTA */
-.benefits-cta{background:linear-gradient(135deg,#0d1a0d 0%,#111 100%);border:1px solid rgba(0,204,102,.2);border-radius:16px;padding:3rem 2rem;text-align:center;margin:2rem 0}
-.benefits-cta h2{font-family:'Archivo Black',sans-serif;font-size:clamp(1.8rem,5vw,3rem);color:var(--text);margin-bottom:1rem}
-.benefits-cta h2 span{color:var(--green)}
-.benefits-cta p{color:#888;max-width:500px;margin:0 auto 2rem;font-size:.95rem}
-.btn-green{background:var(--green);color:#000;font-weight:700}
-.btn-green:hover{background:#00aa55;transform:translateY(-2px)}
-
-/* SHARE */
-.share-bar{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 1.5rem;text-align:center}
-.share-bar h2{font-family:'Archivo Black',sans-serif;font-size:2rem;margin-bottom:.5rem}
-.share-bar p{color:var(--muted);margin-bottom:2rem;font-size:.9rem}
-.share-btns{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
-.share-btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.25rem;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--border);color:var(--text);background:var(--card2);transition:all .2s}
-.share-btn:hover{transform:translateY(-1px)}
-.share-btn.wa:hover{border-color:#25d366;color:#25d366}
-.share-btn.fb:hover{border-color:#1877f2;color:#1877f2}
-.share-btn.tw:hover{border-color:#1da1f2;color:#1da1f2}
-.share-btn.rd:hover{border-color:#ff4500;color:#ff4500}
-
-/* FOOTER */
-footer{background:var(--card);border-top:1px solid var(--border);padding:2.5rem 1.5rem;text-align:center}
-footer p{font-size:.8rem;color:var(--muted);line-height:2;max-width:600px;margin:0 auto}
-footer a{color:var(--muted);text-decoration:none}
-footer a:hover{color:var(--red)}
-.footer-logo{font-family:'Archivo Black',sans-serif;font-size:1.5rem;color:var(--red);margin-bottom:.5rem}
-
-/* PULSE */
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
-.pulse{animation:pulse 2s ease-in-out infinite}
-
-@media(max-width:600px){
-  .nav-links{display:none}
-  section{padding:3rem 1rem}
-  .hero{padding:3rem 1rem 2.5rem}
-}
-</style>
-</head>
-<body>
-
-<!-- TICKER -->
-<div class="ticker">
-  <span class="ticker-inner">⚠️ KYC PASSPORT SCAM — NEVER SEND YOUR ID TO STRANGERS &nbsp;&nbsp;&nbsp; 🚨 DISCORD ACCOUNT BUYING = BENEFITS FRAUD RISK &nbsp;&nbsp;&nbsp; ⛔ FAKE LOAN GROUPS ON REDDIT — ALL SCAMMERS &nbsp;&nbsp;&nbsp; 🔴 SNAPCHAT "PETROL MONEY" = NUDE SCAM SETUP &nbsp;&nbsp;&nbsp; ⚠️ OUTLIER AI — US TAX BILL WAITING FOR YOU &nbsp;&nbsp;&nbsp; 🚨 FREE £5 FACEBOOK POSTS — DATA HARVESTING &nbsp;&nbsp;&nbsp; ⛔ NIGERIAN ACCOUNT HACKERS ACTIVE ON FACEBOOK &nbsp;&nbsp;&nbsp;</span>
-</div>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">UK<span>ScamWatch</span></div>
-  <div class="nav-links">
-    <a href="#scams">Scams</a>
-    <a href="#redflags">Red Flags</a>
-    <a href="#identity">Identity</a>
-    <a href="#realhelp">Real Help</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-warning pulse">⚠️ Real scams. Real warnings. No BS.</div>
-  <h1>They're <span>scamming</span><br>everyone.<br>Know the game.</h1>
-  <p class="hero-sub">From KYC passport fraud to fake Facebook £5 posts — here's every scam targeting broke Britain right now. Named. Explained. Exposed.</p>
-  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem">
-    <a href="#scams" class="btn btn-red">⚠️ See All Scams</a>
-    <a href="#realhelp" class="btn btn-outline">💚 Get Real Help Instead</a>
-  </div>
-  <div class="hero-stats">
-    <div class="hero-stat"><div class="hero-stat-num">£2.3B</div><div class="hero-stat-label">Lost to scams UK 2024</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">100%</div><div class="hero-stat-label">Of these are avoidable</div></div>
-    <div class="hero-stat"><div class="hero-stat-num">£0</div><div class="hero-stat-label">Cost of this warning</div></div>
-  </div>
-</div>
-
-<div class="counter-bar">
-  <p>Scams documented on this page</p>
-  <div class="counter-num">13</div>
-</div>
-
-<!-- IDENTITY SCAMS -->
-<section id="identity">
-  <div class="section-label">🪪 Most Dangerous</div>
-  <h2>Identity &amp;<br>Account Scams</h2>
-  <p class="section-intro">These don't just cost you money. They can cost you your benefits, your bank account, and your freedom. These are the ones that ruin lives.</p>
-
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">🪪</span>
-      <h3>KYC Passport / ID Scam</h3>
-      <p>Someone asks you to send a photo of your passport, driving licence, or bank statement. They say it's for "verification" to unlock a payment or referral bonus. It's not. They're selling your identity or using it to open fraudulent accounts.</p>
-      <div class="scam-rule">Your ID in someone else's hands = identity theft, fraud charges, and a destroyed credit file. Forever.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">💳</span>
-      <h3>Account Buying / Selling</h3>
-      <p>Someone offers you £50-£200 for your bank account details or to use your account to receive money. They say it's "just for transfers." It's money laundering. When police investigate — it's YOUR account. YOU get arrested. YOU lose your benefits.</p>
-      <div class="scam-rule">Selling your account = money mule = criminal conviction. People are going to jail for this right now.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">🎮</span>
-      <h3>Discord Account Buying</h3>
-      <p>Paying or getting paid for Discord, Reddit, or social media accounts. Often linked to crypto scams, fraud networks, and bot farms. Your account gets used to scam other people — then traced back to you.</p>
-      <div class="scam-rule">Platform accounts tied to your identity. When fraud happens through them — you're liable.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-critical">CRITICAL</span>
-      <span class="scam-icon">🌍</span>
-      <h3>Nigerian / West African Account Hacking</h3>
-      <p>Facebook friend requests from attractive strangers, long conversations building "trust," then requests to click a link, log in somewhere, or share a code. Your account gets hijacked and used to scam your friends and family.</p>
-      <div class="scam-rule">Never click links from new Facebook friends. Never share login codes. If it feels off — it is.</div>
-    </div>
-  </div>
-</section>
-
-<hr>
-
-<!-- MONEY SCAMS -->
-<section id="scams">
-  <div class="section-label">💸 Money Scams</div>
-  <h2>Fake Money<br>&amp; "Free Cash"</h2>
-  <p class="section-intro">If someone's offering you free money on Facebook, Reddit or Discord — read this first. Every single one of these has a catch that costs you more than you gain.</p>
-
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">💰</span>
-      <h3>"Free £5 / £10 / £20" Facebook Posts</h3>
-      <p>Posts saying "comment INFO for free £5" with 13+ comments. Nobody gets £5. You get added to a WhatsApp group, sold a course, or harvested for data. The engagement is fake or desperate people who never received anything.</p>
-      <div class="scam-rule">If free money required a comment — it's data harvesting or a funnel into something worse.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">📱</span>
-      <h3>eBay Selling Tax Trap</h3>
-      <p>People sell stuff on eBay thinking it's just pocket money. Since 2024 HMRC gets automatic reports if you sell over £1,000/year. People getting surprise tax bills, penalties, and investigations — years later when they've forgotten.</p>
-      <div class="scam-rule">Not technically a scam — but nobody tells you. Sell over £1,000/year on eBay? Register as self-employed or declare it.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">🤖</span>
-      <h3>Outlier AI / "Work From Home AI" Traps</h3>
-      <p>Platforms like Outlier pay you in USD as a US contractor. Sounds great. Then a US tax form arrives. You owe IRS money. UK tax implications too. What looked like extra income becomes a cross-border tax nightmare nobody warned you about.</p>
-      <div class="scam-rule">Any platform paying in USD as a "contractor" = potential US tax liability. Ask before you start.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">📊</span>
-      <h3>Reddit Loan Groups</h3>
-      <p>"Borrow £100, repay £120 next week." Real people lending to strangers on Reddit. The lenders are often scammers who take your personal info then disappear. The borrowers often never repay and vanish. Nobody wins. Everyone gets burned.</p>
-      <div class="scam-rule">Reddit peer lending = unregulated, unprotected, almost always a scam on one or both sides.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-medium">MEDIUM</span>
-      <span class="scam-icon">💡</span>
-      <h3>Marketing "Secret Sauce" Agencies</h3>
-      <p>"Get to the top of Google Maps for £1.90/day!" It's just a basic Google Business Profile setup. Takes 20 minutes and costs nothing. They charge £150+ setup and monthly fees for something you can do yourself in an afternoon for free.</p>
-      <div class="scam-rule">Google Business Profile is free. Any agency charging £100+ just to set it up is ripping you off.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-medium">MEDIUM</span>
-      <span class="scam-icon">🧠</span>
-      <h3>AI Prompt Selling</h3>
-      <p>Someone sells you a £10-£50 "prompt pack" for ChatGPT or Claude. Fancy PDF, lots of hype. The prompts inside are things you could have typed yourself in 30 seconds. AI will literally write better prompts for free if you just ask it to.</p>
-      <div class="scam-rule">Ask any AI: "Write me a prompt to do X." It will do it. For free. Instantly. Every time.</div>
-    </div>
-  </div>
-</section>
-
-<hr>
-
-<!-- PERSONAL / SOCIAL SCAMS -->
-<section id="social">
-  <div class="section-label">👤 Personal Scams</div>
-  <h2>Personal &amp;<br>Social Scams</h2>
-  <p class="section-intro">These target you personally — through loneliness, desperation, or just being a decent person. Recognise the scripts before they run them on you.</p>
-
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">📸</span>
-      <h3>Nude Selling / Sextortion</h3>
-      <p>Woman adds you on Snapchat or Instagram. Builds a tiny bit of chat. Then: "I sell nudes, want to buy?" Or they share something first — then demand payment or they'll send screenshots to your contacts. The "woman" is often not who they claim.</p>
-      <div class="scam-rule">Never pay. Never engage. Block and report immediately. Paying once guarantees they come back for more.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-high">HIGH RISK</span>
-      <span class="scam-icon">⛽</span>
-      <h3>Snapchat "Petrol / Emergency" Scam</h3>
-      <p>Stranger adds you, tells a believable sob story — stranded, need petrol, just £20-£40, will pay back. Story has holes if you look. Once you send — they're gone. Or pivot to selling nudes. Same script, different opener every time.</p>
-      <div class="scam-rule">Strangers asking for money via Snapchat / Instagram are running a script. The story is always slightly off.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-level level-medium">MEDIUM</span>
-      <span class="scam-icon">📧</span>
-      <h3>Dodgy Texts &amp; Emails</h3>
-      <p>"Your parcel is held." "Your bank account has been suspended." "HMRC owes you a refund." All fake. All trying to get you to click a link and enter your details. The links look real. The websites look real. They're not.</p>
-      <div class="scam-rule">Never click links in unexpected texts or emails. Go directly to the official website by typing it yourself.</div>
-    </div>
-  </div>
-
-  <!-- HOW IT WORKS -->
-  <div class="how-card" style="margin-top:2rem">
-    <h3>⚙️ How the Snapchat / Social Scam Actually Works — The Full Script</h3>
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><p><strong>Random add.</strong> Attractive profile picture. No mutual friends. Adds you out of nowhere.</p></div>
-      <div class="step"><div class="step-num">2</div><p><strong>Small talk.</strong> "Hey how are you?" Friendly. Normal. Building just enough rapport.</p></div>
-      <div class="step"><div class="step-num">3</div><p><strong>The story.</strong> Stranded. Petrol. Sick relative. Lost purse. Always urgent. Always just £20-£40. Always "I'll pay you back."</p></div>
-      <div class="step"><div class="step-num">4</div><p><strong>If you hesitate</strong> — they pivot to nude selling, or get aggressive, or disappear and try again next week with a new profile.</p></div>
-      <div class="step"><div class="step-num">5</div><p><strong>If you pay</strong> — they're gone. Or they come back. Because you paid once which means you might pay again.</p></div>
-    </div>
-  </div>
-</section>
-
-<hr>
-
-<!-- RED FLAGS -->
-<section id="redflags">
-  <div class="section-label">🚩 Universal Red Flags</div>
-  <h2>If You See<br>Any of These —<br>Walk Away</h2>
-  <p class="section-intro">Doesn't matter what the offer is. If any of these apply — it's a scam. No exceptions.</p>
-
-  <div class="flags-grid">
-    <div class="flag">They need your ID, passport, or bank details to "release" money</div>
-    <div class="flag">They contact you first out of nowhere</div>
-    <div class="flag">The story doesn't quite add up</div>
-    <div class="flag">They need money before you get paid</div>
-    <div class="flag">They want payment via PayPal Friends, Cash App, or bank transfer</div>
-    <div class="flag">They won't video call or their camera is "broken"</div>
-    <div class="flag">They're unusually complimentary very quickly</div>
-    <div class="flag">They get aggressive when you question anything</div>
-    <div class="flag">The group admin won't allow links to outside resources</div>
-    <div class="flag">Everyone in the comments says "Info" or "Yes please"</div>
-    <div class="flag">The opportunity involves receiving money into your account for someone else</div>
-    <div class="flag">"No time wasters" in the post — classic pressure tactic</div>
-  </div>
-
-  <div style="background:rgba(255,51,51,.05);border:1px solid rgba(255,51,51,.2);border-radius:var(--r);padding:1.5rem;margin-top:1.5rem">
-    <p style="font-size:.9rem;color:#ccc;line-height:1.8"><strong style="color:var(--red)">The golden rule:</strong> If someone you've never met in person is offering you money, asking for money, or asking for your personal details — assume it's a scam until proven otherwise. Real opportunities don't need to pressure you. Real people don't need your passport. Real jobs don't ask you to receive money for them.</p>
-  </div>
-</section>
-
-<hr>
-
-<!-- REPORT IT -->
-<section style="padding:3rem 1.5rem;max-width:960px;margin:0 auto">
-  <div class="section-label">📢 Report It</div>
-  <h2>Got Scammed<br>or Spotted One?</h2>
-  <p class="section-intro">Report it. Every report helps protect someone else.</p>
-  <div class="scam-grid">
-    <div class="scam-card">
-      <span class="scam-icon">🏛️</span>
-      <h3>Action Fraud — UK's National Fraud Reporting</h3>
-      <p>Report any financial scam, fraud, or cybercrime. Free, official, and your report genuinely helps investigations.</p>
-      <a href="https://www.actionfraud.police.uk" target="_blank" rel="noopener" style="color:#4a9eff;font-size:.83rem;text-decoration:none">actionfraud.police.uk →</a>
-    </div>
-    <div class="scam-card">
-      <span class="scam-icon">📱</span>
-      <h3>Forward Scam Texts to 7726</h3>
-      <p>Got a dodgy text? Forward it to 7726 (spells SPAM). Free from all networks. Reports it directly to your mobile provider.</p>
-      <div class="scam-rule">Takes 10 seconds and actually works.</div>
-    </div>
-    <div class="scam-card">
-      <span class="scam-icon">📧</span>
-      <h3>Report Scam Emails</h3>
-      <p>Forward suspicious emails to report@phishing.gov.uk — the UK's official phishing email reporting service. Free and takes seconds.</p>
-      <a href="mailto:report@phishing.gov.uk" style="color:#4a9eff;font-size:.83rem;text-decoration:none">report@phishing.gov.uk →</a>
-    </div>
-  </div>
-</section>
-
-<hr>
-
-<!-- BENEFITS CTA -->
-<section id="realhelp" style="padding:3rem 1.5rem;max-width:960px;margin:0 auto">
-  <div class="benefits-cta">
-    <div style="font-size:2.5rem;margin-bottom:1rem">💚</div>
-    <h2>Done with scams?<br><span>Here's what actually works.</span></h2>
-    <p>While scammers were taking your money, you may have been missing real money you're actually entitled to. Benefits, grants, energy help, food banks, free legal advice — all real, all free, all yours.</p>
-    <a href="https://smallville1979.github.io/benefits-guide/" target="_blank" rel="noopener" class="btn btn-green" style="font-size:15px;padding:1rem 2rem">💛 Go to the Free Benefits Survival Guide →</a>
-    <p style="font-size:.8rem;color:#555;margin-top:1rem">No signup. No catch. No scam. Just free help.</p>
-  </div>
-</section>
-
-<!-- SHARE -->
-<div class="share-bar">
-  <h2>⚠️ Share This — Someone You Know Needs It</h2>
-  <p>Every share protects someone. Takes 10 seconds.</p>
-  <div class="share-btns">
-    <a href="https://wa.me/?text=Know+these+UK+scams+before+they+get+you+%E2%80%94+https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F" target="_blank" rel="noopener" class="share-btn wa">💬 WhatsApp</a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F&quote=UK+Scam+Watch+%E2%80%94+every+scam+targeting+broke+Britain+right+now.+Named.+Exposed." target="_blank" rel="noopener" class="share-btn fb">👍 Facebook</a>
-    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F&text=UK+Scam+Watch+%E2%80%94+KYC+passport+fraud%2C+fake+%C2%A35+posts%2C+account+buying%2C+Snapchat+scams+and+more.+Share+before+someone+gets+burned+%E2%9A%A0%EF%B8%8F" target="_blank" rel="noopener" class="share-btn tw">🐦 Twitter</a>
-    <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fsmallville1979.github.io%2Fuk-scam-watch%2F&title=UK+Scam+Watch+%E2%80%94+every+scam+targeting+broke+Britain+right+now+%5BExposed%5D" target="_blank" rel="noopener" class="share-btn rd">🔴 Reddit</a>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">UKScamWatch ⚠️</div>
-  <p>Built for free. No ads. No agenda. Just warnings.<br>
-  Spotted a scam not listed here? The more people know, the safer everyone is.<br><br>
-  Also check: <a href="https://www.actionfraud.police.uk">Action Fraud</a> · <a href="https://www.citizensadvice.org.uk">Citizens Advice</a> · <a href="https://www.gov.uk/report-suspicious-emails-websites-phishing">Gov.uk Phishing Reports</a><br><br>
-  <a href="https://smallville1979.github.io/benefits-guide/">💛 Benefits Survival Guide</a> — real free help for people who need it</p>
+  <div class="footer-logo">UK Jobs Guide 💼</div>
+  <p>Free advice for everyone who needs it. No ads. No agenda. Just help.<br><br>
+  <a href="https://smallville1979.github.io/benefits-guide/">💛 Benefits Survival Guide</a> ·
+  <a href="https://smallville1979.github.io/ukscamwatch/">⚠️ UK Scam Watch</a> ·
+  <a href="https://ko-fi.com/tomgallagher">☕ Buy Tom a Coffee</a><br><br>
+  Built with ❤️ for everyone going through a hard time</p>
 </footer>
 
 </body>
